@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwena Ka Bobedi - School Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <div class="nav-logo-mark">KB</div>
+      <div class="nav-logo-text">
+        Kwena Ka Bobedi
+        <span class="nav-logo-sub">School Inventory Management</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="HowItWorks.html" class="nav-link">How It Works</a>
+      <a href="Schools.html" class="nav-link">Schools</a>
+      <a href="Gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="nav-cta" onclick="window.location.href='RequestQuote.html'">Request Quote</button>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="HowItWorks.html" class="mobile-link">How It Works</a>
+    <a href="Schools.html" class="mobile-link">Schools</a>
+    <a href="Gallery.html" class="mobile-link">Gallery</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="RequestQuote.html" class="mobile-link" style="color: #C9A84C">→ Request a Quote</a>
+  </div>
+</nav>
+
+
+<main class="page-section">
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-hero-tag">Get In Touch</div>
+      <h1 class="page-hero-title">Contact Our Team</h1>
+      <p class="page-hero-desc">Have questions about our inventory services or ready to schedule an audit? Reach out today.</p>
+    </div>
+  </div>
+  
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-card">
+        <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+          <div class="form-grid">
+            <div class="form-field">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" required placeholder="Principal / SGB Member">
+            </div>
+            <div class="form-field">
+              <label class="form-label">School / Institution Name</label>
+              <input type="text" class="form-input" required placeholder="School Name">
+            </div>
+            <div class="form-field full">
+              <label class="form-label">Message / Inquiry</label>
+              <textarea class="form-textarea" required placeholder="How can we help your school?"></textarea>
+            </div>
+            <div class="form-field full">
+              <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Details & Map Split Section -->
+  <section class="section" style="padding-top: 0;">
+    <div class="section-inner">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: stretch;">
+        
+        <!-- Left Column: Contact Details Grid -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="contact-item" style="display: flex; gap: 1rem; align-items: flex-start; background: #F8F5EF; padding: 1.25rem; border-radius: 10px;">
+            <div class="contact-icon" style="font-size: 1.5rem;">📍</div>
+            <div>
+              <div class="contact-label" style="font-weight: 600; color: #1B4332;">Head Office</div>
+              <div class="contact-value" style="color: #4a5a4b;">Johannesburg, Gauteng</div>
+              <div class="contact-sub" style="font-size: 12px; color: #7a8a7b;">South Africa</div>
+            </div>
+          </div>
+          
+          <div class="contact-item" style="display: flex; gap: 1rem; align-items: flex-start; background: #F8F5EF; padding: 1.25rem; border-radius: 10px;">
+            <div class="contact-icon" style="font-size: 1.5rem;">📞</div>
+            <div>
+              <div class="contact-label" style="font-weight: 600; color: #1B4332;">Phone</div>
+              <div class="contact-value" style="color: #4a5a4b;">+27 (0)11 000 0000</div>
+              <div class="contact-sub" style="font-size: 12px; color: #7a8a7b;">Mon – Fri, 8:00 – 16:30</div>
+            </div>
+          </div>
+          
+          <div class="contact-item" style="display: flex; gap: 1rem; align-items: flex-start; background: #F8F5EF; padding: 1.25rem; border-radius: 10px;">
+            <div class="contact-icon" style="font-size: 1.5rem;">📧</div>
+            <div>
+              <div class="contact-label" style="font-weight: 600; color: #1B4332;">Email</div>
+              <div class="contact-value" style="color: #4a5a4b;">info@kwanakabobedi.co.za</div>
+              <div class="contact-sub" style="font-size: 12px; color: #7a8a7b;">Responses within 1 working day</div>
+            </div>
+          </div>
+          
+          <div class="contact-item" style="display: flex; gap: 1rem; align-items: flex-start; background: #F8F5EF; padding: 1.25rem; border-radius: 10px;">
+            <div class="contact-icon" style="font-size: 1.5rem;">💬</div>
+            <div>
+              <div class="contact-label" style="font-weight: 600; color: #1B4332;">WhatsApp</div>
+              <div class="contact-value" style="color: #4a5a4b;">+27 71 000 0000</div>
+              <div class="contact-sub" style="font-size: 12px; color: #7a8a7b;">Quick queries and document requests</div>
+            </div>
+          </div>
+          
+          <div class="contact-item" style="display: flex; gap: 1rem; align-items: flex-start; background: #F8F5EF; padding: 1.25rem; border-radius: 10px;">
+            <div class="contact-icon" style="font-size: 1.5rem;">🌐</div>
+            <div>
+              <div class="contact-label" style="font-weight: 600; color: #1B4332;">Provinces Served</div>
+              <div class="contact-value" style="color: #4a5a4b;">Gauteng, KZN, Mpumalanga</div>
+              <div class="contact-sub" style="font-size: 12px; color: #7a8a7b;">Expanding to additional provinces</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Map Embed -->
+        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.08); min-height: 400px; background: #eee;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.6729583712!2d28.0229712!3d-26.2041028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1650000000000!5m2!1sen!2sza" 
+            width="100%" 
+            height="100%" 
+            style="border:0; width:100%; height:100%; min-height:420px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Kwena Ka Bobedi</div>
+          <div class="footer-brand-desc">Professional school inventory management across South Africa. Accountability, transparency, and compliance — every academic year.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="navTo('services')">LTSM Management</li>
+            <li onclick="navTo('services')">Stationery Control</li>
+            <li onclick="navTo('services')">Stock Audits</li>
+            <li onclick="navTo('services')">Remote Reporting</li>
+            <li onclick="navTo('services')">Annual Reconciliation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li onclick="navTo('about.html')">About Us</li>
+            <li onclick="navTo('howItworks.html')">How It Works</li>
+            <li onclick="navTo('Schools.html')">Schools</li>
+            <li onclick="navTo('contact.html')">Contact</li>
+            <li onclick="navTo('RequestQuote.html')">Get a Quote</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" style="gap: 0.75rem;">
+            <li style="cursor: default;">Kempton Park, Gauteng</li>
+            <li style="cursor: default;">kwenakabobedi@gmail.com</li>
+            <li style="cursor: default;">+27 (0)73 484 2927</li>
+            <li style="cursor: default;">Mon–Fri, 08:00–16:30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Kwena Ka Bobedi (Pty) Ltd. All rights reserved. Developed by Team Prokreative.</div>
+        <div class="footer-popia" onclick="navTo('Popia.html')">POPIA Privacy Policy →</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>

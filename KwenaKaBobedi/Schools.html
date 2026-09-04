@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwena Ka Bobedi - School Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <div class="nav-logo-mark">KB</div>
+      <div class="nav-logo-text">
+        Kwena Ka Bobedi
+        <span class="nav-logo-sub">School Inventory Management</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="HowItWorks.html" class="nav-link">How It Works</a>
+      <a href="Schools.html" class="nav-link">Schools</a>
+      <a href="Gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="nav-cta" onclick="window.location.href='RequestQuote.html'">Request Quote</button>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="HowItWorks.html" class="mobile-link">How It Works</a>
+    <a href="Schools.html" class="mobile-link">Schools</a>
+    <a href="Gallery.html" class="mobile-link">Gallery</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="RequestQuote.html" class="mobile-link" style="color: #C9A84C">→ Request a Quote</a>
+  </div>
+</nav>
+
+<!--Simphiwe don't foget that you class is hidden, remove it later in other pages...Please!-->
+<main id="page-sectors" class="page-section">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-tag">Who We Serve</div>
+        <h1 class="page-hero-title">Built for Every Level of the Education Sector</h1>
+        <p class="page-hero-desc">Whether you're a school principal, an SGB member, or a district official, our service is designed around your specific accountability requirements.</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner">
+        <div class="card-grid">
+          <div class="sector-card">
+            <img src="Assets/Images/Officebuilding.jpg" alt="Government Office" class="hero-image"style="width: 80%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="sector-card-body">
+              <div class="sector-body-title">Common Challenges</div>
+              <ul class="sector-list" style="margin-bottom: 1.25rem;">
+                <li>High-volume LTSM issuing to young learners</li><li>Frequent textbook damage and loss tracking</li><li>Stationery replenishment across multiple grades</li>
+              </ul>
+              <div class="sector-body-title">How We Help</div>
+              <ul class="sector-list" style="color: #1B4332;">
+                <li>Learner-level issuing records with parent sign-off</li><li>Condition tracking and loss reporting per grade</li><li>Consolidated monthly replenishment requests</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sector-card">
+            <img src="Assets/Images/MiddleSchool.jpg" alt="Government Office" class="hero-image"style="width: 80%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="sector-card-body">
+              <div class="sector-body-title">Common Challenges</div>
+              <ul class="sector-list" style="margin-bottom: 1.25rem;">
+                <li>Subject-specific LTSM across multiple departments</li><li>Matric textbook management and condition grading</li><li>Departmental stationery budget control</li>
+              </ul>
+              <div class="sector-body-title">How We Help</div>
+              <ul class="sector-list" style="color: #1B4332;">
+                <li>Department-level stock allocation and tracking</li><li>Matric resource lifecycle management</li><li>Teacher requisition and sign-off workflows</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sector-card">
+            <img src="Assets/Images/College.jpg" alt="Government Office" class="hero-image"style="width: 80%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="sector-card-body">
+              <div class="sector-body-title">Common Challenges</div>
+              <ul class="sector-list" style="margin-bottom: 1.25rem;">
+                <li>Cross-school stock visibility and reporting</li><li>Consolidated procurement planning data</li><li>Audit compliance across multiple institutions</li>
+              </ul>
+              <div class="sector-body-title">How We Help</div>
+              <ul class="sector-list" style="color: #1B4332;">
+                <li>Multi-school summary reporting dashboards</li><li>Aggregated procurement and variance reports</li><li>District-submission-ready audit documentation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sector-card">
+            <img src="Assets/Images/Officebuilding.jpg" alt="Government Office" class="hero-image"style="width: 80%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="sector-card-body">
+              <div class="sector-body-title">Common Challenges</div>
+              <ul class="sector-list" style="margin-bottom: 1.25rem;">
+                <li>Quarterly accountability reporting</li><li>Procurement fund transparency</li><li>Year-end financial reconciliation evidence</li>
+              </ul>
+              <div class="sector-body-title">How We Help</div>
+              <ul class="sector-list" style="color: #1B4332;">
+                <li>SGB-ready monthly and quarterly stock reports</li><li>Budget-vs-actual analysis per expense category</li><li>Full year-end reconciliation package for meetings</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Kwena Ka Bobedi</div>
+          <div class="footer-brand-desc">Professional school inventory management across South Africa. Accountability, transparency, and compliance — every academic year.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="navTo('services')">LTSM Management</li>
+            <li onclick="navTo('services')">Stationery Control</li>
+            <li onclick="navTo('services')">Stock Audits</li>
+            <li onclick="navTo('services')">Remote Reporting</li>
+            <li onclick="navTo('services')">Annual Reconciliation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li onclick="navTo('about.html')">About Us</li>
+            <li onclick="navTo('howItworks.html')">How It Works</li>
+            <li onclick="navTo('Schools.html')">Schools</li>
+            <li onclick="navTo('contact.html')">Contact</li>
+            <li onclick="navTo('RequestQuote.html')">Get a Quote</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" style="gap: 0.75rem;">
+            <li style="cursor: default;">Kempton Park, Gauteng</li>
+            <li style="cursor: default;">kwenakabobedi@gmail.com</li>
+            <li style="cursor: default;">+27 (0)73 484 2927</li>
+            <li style="cursor: default;">Mon–Fri, 08:00–16:30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Kwena Ka Bobedi (Pty) Ltd. All rights reserved. Developed by Team Prokreative.</div>
+        <div class="footer-popia" onclick="navTo('Popia.html')">POPIA Privacy Policy →</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>

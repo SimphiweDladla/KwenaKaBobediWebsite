@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwena Ka Bobedi - School Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <div class="nav-logo-mark">KB</div>
+      <div class="nav-logo-text">
+        Kwena Ka Bobedi
+        <span class="nav-logo-sub">School Inventory Management</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="how-it-works.html" class="nav-link">How It Works</a>
+      <a href="schools.html" class="nav-link">Schools</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="nav-cta" onclick="window.location.href='RequestQuote.html'">Request Quote</button>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="HowItWorks.html" class="mobile-link">How It Works</a>
+    <a href="Schools.html" class="mobile-link">Schools</a>
+    <a href="Gallery.html" class="mobile-link">Gallery</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="RequestQuote.html" class="mobile-link" style="color: #C9A84C">→ Request a Quote</a>
+  </div>
+</nav>
+
+
+<main id="page-services" class="page-section">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-tag">Our Services</div>
+        <h1 class="page-hero-title">Comprehensive School Inventory Management</h1>
+        <p class="page-hero-desc">Every service we offer is designed around the unique operational pressures of South African public and independent schools.</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner">
+        <div class="service-row">
+          <div>
+            <img src="Assets/Images/Teacher.jpg" alt=" Teacher" class="hero-image"style="width: 95%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="section-label">Service 01</div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: #1B4332; margin-bottom: 0.75rem; line-height: 1.2;">LTSM Stock Management</h2>
+            <p style="font-size: 14px; color: #6B7B6C; line-height: 1.8; font-weight: 300; margin-bottom: 1.5rem;">Learner Teacher Support Material (LTSM) is one of a school's largest budget items. We manage the full lifecycle — from order verification and receiving to issuing to learners and year-end returns.</p>
+          </div>
+          <div style="background: #F8F5EF; border-radius: 10px; padding: 1.75rem;">
+            <div style="font-size: 12px; font-weight: 600; color: #1B4332; margin-bottom: 1rem; letter-spacing: 0.05em; text-transform: uppercase;">What's Included</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Delivery verification against official purchase orders</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Condition grading and tagging of all books and materials</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Learner-level issuing records with parent acknowledgement</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>End-of-year collection and condition assessment for reuse analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <img src="Assets/Images/Stationary.jpg" alt="School Inventory Management" class="hero-image"style="width: 95%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="section-label">Service 02</div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: #1B4332; margin-bottom: 0.75rem; line-height: 1.2;">Stationery & Consumables Control</h2>
+            <p style="font-size: 14px; color: #6B7B6C; line-height: 1.8; font-weight: 300; margin-bottom: 1.5rem;">Day-to-day stationery is where leakage happens silently. Our controls stop shrinkage at the source through tightly managed issuing processes.</p>
+          </div>
+          <div style="background: #F8F5EF; border-radius: 10px; padding: 1.75rem;">
+            <div style="font-size: 12px; font-weight: 600; color: #1B4332; margin-bottom: 1rem; letter-spacing: 0.05em; text-transform: uppercase;">What's Included</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Monthly requisition and issuing cycles per department</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Teacher and admin acknowledgement sign-offs</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Low-stock threshold alerts for timely re-ordering</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Supplier invoice matching and budget variance reporting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <img src="Assets/Images/StockCount.jpg" alt="Audit" class="hero-image"style="width: 95%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="section-label">Service 03</div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: #1B4332; margin-bottom: 0.75rem; line-height: 1.2;">Stock Counts & Physical Audits</h2>
+            <p style="font-size: 14px; color: #6B7B6C; line-height: 1.8; font-weight: 300; margin-bottom: 1.5rem;">We conduct scheduled cycle counts and comprehensive year-end physical audits that meet DBE and SGB reporting requirements.</p>
+          </div>
+          <div style="background: #F8F5EF; border-radius: 10px; padding: 1.75rem;">
+            <div style="font-size: 12px; font-weight: 600; color: #1B4332; margin-bottom: 1rem; letter-spacing: 0.05em; text-transform: uppercase;">What's Included</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Scheduled quarterly cycle counts</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Full annual physical stocktake</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Variance identification and root-cause analysis</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Audit-ready documentation packages for district submission</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <img src="Assets/Images/Reporting.jpg" alt="Reporting" class="hero-image" style="width: 95%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div class="section-label">Service 04</div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: #1B4332; margin-bottom: 0.75rem; line-height: 1.2;">Reconciliation & Reporting</h2>
+            <p style="font-size: 14px; color: #6B7B6C; line-height: 1.8; font-weight: 300; margin-bottom: 1.5rem;">Accurate reconciliation between physical stock and recorded balances is the foundation of financial accountability.</p>
+          </div>
+          <div style="background: #F8F5EF; border-radius: 10px; padding: 1.75rem;">
+            <div style="font-size: 12px; font-weight: 600; color: #1B4332; margin-bottom: 1rem; letter-spacing: 0.05em; text-transform: uppercase;">What's Included</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>System-to-physical reconciliation reports</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Unexplained variance investigation and write-off process</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Month-end management reports for principals and SGBs</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Year-end financial summary aligned to NSNP and procurement records</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Kwena Ka Bobedi</div>
+          <div class="footer-brand-desc">Professional school inventory management across South Africa. Accountability, transparency, and compliance — every academic year.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="navTo('services')">LTSM Management</li>
+            <li onclick="navTo('services')">Stationery Control</li>
+            <li onclick="navTo('services')">Stock Audits</li>
+            <li onclick="navTo('services')">Remote Reporting</li>
+            <li onclick="navTo('services')">Annual Reconciliation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li onclick="navTo('about.html')">About Us</li>
+            <li onclick="navTo('howItworks.html')">How It Works</li>
+            <li onclick="navTo('Schools.html')">Schools</li>
+            <li onclick="navTo('contact.html')">Contact</li>
+            <li onclick="navTo('RequestQuote.html')">Get a Quote</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" style="gap: 0.75rem;">
+            <li style="cursor: default;">Kempton Park, Gauteng</li>
+            <li style="cursor: default;">kwenakabobedi@gmail.com</li>
+            <li style="cursor: default;">+27 (0)73 484 2927</li>
+            <li style="cursor: default;">Mon–Fri, 08:00–16:30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Kwena Ka Bobedi (Pty) Ltd. All rights reserved. Developed by Team Prokreative.</div>
+        <div class="footer-popia" onclick="navTo('Popia.html')">POPIA Privacy Policy →</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>

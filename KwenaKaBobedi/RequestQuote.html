@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwena Ka Bobedi - School Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <div class="nav-logo-mark">KB</div>
+      <div class="nav-logo-text">
+        Kwena Ka Bobedi
+        <span class="nav-logo-sub">School Inventory Management</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="HowItWorks.html" class="nav-link">How It Works</a>
+      <a href="Schools.html" class="nav-link">Schools</a>
+      <a href="Gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="nav-cta" onclick="window.location.href='RequestQuote.html'">Request Quote</button>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="how-it-works.html" class="mobile-link">How It Works</a>
+    <a href="schools.html" class="mobile-link">Schools</a>
+    <a href="gallery.html" class="mobile-link">Gallery</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="RequestQuote.html" class="mobile-link" style="color: #C9A84C">→ Request a Quote</a>
+  </div>
+</nav>
+
+<main id="page-quote" class="page-section">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-tag">Get a Quote</div>
+        <h1 class="page-hero-title">Tell Us About Your School</h1>
+        <p class="page-hero-desc">Complete the form below and our team will prepare a tailored service proposal within 2 working days.</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner" style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 3rem;">
+        <div>
+          <div class="section-label">Pricing Plans</div>
+          <h2 class="section-title">Flexible Service Tiers</h2>
+          <div style="display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem;">
+            <div class="pricing-card">
+              <div class="pricing-tier">Starter</div><div class="pricing-name">Remote Essentials</div><div class="pricing-desc">Monthly reporting and virtual support for schools with basic tracking needs.</div>
+              <ul class="pricing-features"><li>Monthly stock reports</li><li>Email & WhatsApp support</li><li>Quarterly reconciliation</li><li>POPIA-compliant documentation</li></ul>
+            </div>
+            <div class="pricing-card featured">
+              <div class="pricing-badge">Most Popular</div>
+              <div class="pricing-tier">Standard</div><div class="pricing-name">On-Site Regular</div><div class="pricing-desc">Scheduled on-site visits combined with remote monitoring.</div>
+              <ul class="pricing-features"><li>Bi-weekly on-site visits</li><li>Full LTSM issuing management</li><li>Mid-year & year-end audits</li><li>SGB reporting pack</li><li>District submission support</li></ul>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-tier">Enterprise</div><div class="pricing-name">Full Management</div><div class="pricing-desc">Dedicated on-site inventory manager for large or complex schools.</div>
+              <ul class="pricing-features"><li>Full-time on-site resource</li><li>Real-time stock dashboards</li><li>Multi-site or cluster support</li><li>Custom reporting workflows</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="form-card">
+          <div style="margin-bottom: 1.75rem;">
+            <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #1B4332; margin-bottom: 0.4rem;">Request a Tailored Quote</h3>
+            <p style="font-size: 13px; color: #6B7B6C;">All information is handled in accordance with POPIA. We will never share your data with third parties.</p>
+          </div>
+          <form onsubmit="handleQuoteSubmit(event)">
+            <div class="form-grid">
+              <div class="form-field"><label class="form-label">Full Name *</label><input class="form-input" required placeholder="e.g. Principal S. Zulu"></div>
+              <div class="form-field">
+                <label class="form-label">Role *</label>
+                <select class="form-select" required><option value="">Select your role</option><option>Principal</option><option>SGB Member</option><option>District Official</option><option>Procurement Officer</option><option>School Administrator</option></select>
+              </div>
+              <div class="form-field full"><label class="form-label">School / Institution Name *</label><input class="form-input" required placeholder="e.g. Themba Primary School"></div>
+              <div class="form-field"><label class="form-label">Email Address *</label><input class="form-input" type="email" required placeholder="principal@school.gov.za"></div>
+              <div class="form-field"><label class="form-label">Phone Number</label><input class="form-input" type="tel" placeholder="071 234 5678"></div>
+              <div class="form-field">
+                <label class="form-label">Learner Enrolment Size *</label>
+                <select class="form-select" required><option value="">Select range</option><option>Under 200</option><option>200 – 500</option><option>500 – 1,000</option><option>1,000 – 2,000</option><option>Over 2,000</option></select>
+              </div>
+              <div class="form-field">
+                <label class="form-label">Province</label>
+                <select class="form-select"><option value="">Select province</option><option>Gauteng</option><option>KwaZulu-Natal</option><option>Western Cape</option><option>Eastern Cape</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Free State</option><option>Northern Cape</option></select>
+              </div>
+              <div class="form-field full">
+                <label class="form-label">Services of Interest</label>
+                <select class="form-select"><option value="">Select primary need</option><option>LTSM Management</option><option>Stationery Control</option><option>Annual Audit</option><option>Remote Reporting Only</option><option>Full Management</option><option>Not sure – need advice</option></select>
+              </div>
+              <div class="form-field full"><label class="form-label">Additional Notes</label><textarea class="form-textarea" placeholder="Any specific challenges, deadlines, or requirements we should know about..."></textarea></div>
+              <div class="consent-row">
+                <input type="checkbox" class="consent-check" id="quoteConsent" required>
+                <span class="consent-text">I consent to Kwena Ka Bobedi contacting me regarding this request. My information will be processed in accordance with POPIA and will not be shared with third parties. I can withdraw consent at any time.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary" style="margin-top: 1.75rem; width: 100%;">Submit Quote Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Kwena Ka Bobedi</div>
+          <div class="footer-brand-desc">Professional school inventory management across South Africa. Accountability, transparency, and compliance — every academic year.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="navTo('services')">LTSM Management</li>
+            <li onclick="navTo('services')">Stationery Control</li>
+            <li onclick="navTo('services')">Stock Audits</li>
+            <li onclick="navTo('services')">Remote Reporting</li>
+            <li onclick="navTo('services')">Annual Reconciliation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li onclick="navTo('about.html')">About Us</li>
+            <li onclick="navTo('howItworks.html')">How It Works</li>
+            <li onclick="navTo('Schools.html')">Schools</li>
+            <li onclick="navTo('contact.html')">Contact</li>
+            <li onclick="navTo('RequestQuote.html')">Get a Quote</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" style="gap: 0.75rem;">
+            <li style="cursor: default;">Kempton Park, Gauteng</li>
+            <li style="cursor: default;">kwenakabobedi@gmail.com</li>
+            <li style="cursor: default;">+27 (0)73 484 2927</li>
+            <li style="cursor: default;">Mon–Fri, 08:00–16:30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Kwena Ka Bobedi (Pty) Ltd. All rights reserved. Developed by Team Prokreative.</div>
+        <div class="footer-popia" onclick="navTo('Popia.html')">POPIA Privacy Policy →</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>

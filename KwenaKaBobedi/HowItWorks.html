@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwena Ka Bobedi - School Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <div class="nav-logo-mark">KB</div>
+      <div class="nav-logo-text">
+        Kwena Ka Bobedi
+        <span class="nav-logo-sub">School Inventory Management</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="HowItWorks.html" class="nav-link">How It Works</a>
+      <a href="schools.html" class="nav-link">Schools</a>
+      <a href="Gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="nav-cta" onclick="window.location.href='RequestQuote.html'">Request Quote</button>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="HowItWorks.html" class="mobile-link">How It Works</a>
+    <a href="Schools.html" class="mobile-link">Schools</a>
+    <a href="Gallery.html" class="mobile-link">Gallery</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="RequestQuote.html" class="mobile-link" style="color: #C9A84C">→ Request a Quote</a>
+  </div>
+</nav>
+
+
+
+  <main id="page-how" class="page-section">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-tag">How It Works</div>
+        <h1 class="page-hero-title">Your Full Academic Year, Managed</h1>
+        <p class="page-hero-desc">Our service follows the South African school calendar from January through December, ensuring continuous coverage at every critical inventory moment.</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+          <div class="steps">
+            <div class="step"><div><div class="step-num">1</div></div><div><div class="step-month">January – February</div><div class="step-title">Onboarding & Baseline Assessment</div><div class="step-text">We conduct an initial site visit to understand your current stock management state, identify gaps, and agree on a tailored service plan. A baseline physical count establishes your opening stock position for the academic year.</div></div></div>
+            <div class="step"><div><div class="step-num">2</div></div><div><div class="step-month">February – March</div><div class="step-title">System Setup & Staff Orientation</div><div class="step-text">We configure your inventory tracking framework (digital or hybrid), set up item registers, and provide a brief orientation to all relevant staff — from the storeroom administrator to the principal.</div></div></div>
+            <div class="step"><div><div class="step-num">3</div></div><div><div class="step-month">Term 1 & 2 (April – June)</div><div class="step-title">Active LTSM Issuing & Monitoring</div><div class="step-text">We manage or oversee the issuing of textbooks and stationery to learners, maintaining signed acknowledgement records. Monthly stock reports are produced for the principal and SGB.</div></div></div>
+            <div class="step"><div><div class="step-num">4</div></div><div><div class="step-month">July (Mid-Year)</div><div class="step-title">Mid-Year Cycle Count & Reconciliation</div><div class="step-text">A full mid-year cycle count reconciles physical stock against system records. Variances are investigated and reported, and adjustments are made with documented justification.</div></div></div>
+            <div class="step"><div><div class="step-num">5</div></div><div><div class="step-month">Term 3 (July – September)</div><div class="step-title">Ongoing Monitoring & Replenishment</div><div class="step-text">We monitor consumption rates, trigger replenishment requests ahead of stock-outs, and manage supplier deliveries during the second half of the year.</div></div></div>
+            <div class="step"><div><div class="step-num">6</div></div><div><div class="step-month">Term 4 (October – November)</div><div class="step-title">LTSM Collection & Year-End Prep</div><div class="step-text">We manage the collection of textbooks from learners, assess condition for re-use in the next academic year, and begin preparation of the year-end audit documentation package.</div></div></div>
+            <div class="step"><div><div class="step-num">7</div></div><div><div class="step-month">November – December</div><div class="step-title">Annual Audit & Year-End Report</div><div class="step-text">A comprehensive year-end physical audit produces the full annual stock report — ready for district submission, SGB review, and the following year's procurement planning.</div></div></div>
+          </div>
+          <div style="position: sticky; top: 100px; align-self: start;">
+            <div class="value-card">
+              <div class="value-card-title">Why a Year-Round Partner Matters</div>
+              <div class="value-card-text">Most inventory problems in schools don't happen in December — they happen in February when books are rushed out without records, or in July when nobody knows what's missing. Our year-round presence means issues are caught and resolved before they become audit findings.</div>
+              <div class="value-pillars">
+                <div class="pillar"><div class="pillar-label">Proactive</div><div class="pillar-text">Issues identified before they escalate</div></div>
+                <div class="pillar"><div class="pillar-label">Consistent</div><div class="pillar-text">Same standards applied every term</div></div>
+                <div class="pillar"><div class="pillar-label">Documented</div><div class="pillar-text">Every action has a paper trail</div></div>
+                <div class="pillar"><div class="pillar-label">Scalable</div><div class="pillar-text">Works for 200 or 2,000 learners</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Kwena Ka Bobedi</div>
+          <div class="footer-brand-desc">Professional school inventory management across South Africa. Accountability, transparency, and compliance — every academic year.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="navTo('services')">LTSM Management</li>
+            <li onclick="navTo('services')">Stationery Control</li>
+            <li onclick="navTo('services')">Stock Audits</li>
+            <li onclick="navTo('services')">Remote Reporting</li>
+            <li onclick="navTo('services')">Annual Reconciliation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li onclick="navTo('about.html')">About Us</li>
+            <li onclick="navTo('howItworks.html')">How It Works</li>
+            <li onclick="navTo('Schools.html')">Schools</li>
+            <li onclick="navTo('contact.html')">Contact</li>
+            <li onclick="navTo('RequestQuote.html')">Get a Quote</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" style="gap: 0.75rem;">
+            <li style="cursor: default;">Kempton Park, Gauteng</li>
+            <li style="cursor: default;">kwenakabobedi@gmail.com</li>
+            <li style="cursor: default;">+27 (0)73 484 2927</li>
+            <li style="cursor: default;">Mon–Fri, 08:00–16:30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Kwena Ka Bobedi (Pty) Ltd. All rights reserved. Developed by Team Prokreative.</div>
+        <div class="footer-popia" onclick="navTo('Popia.html')">POPIA Privacy Policy →</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>

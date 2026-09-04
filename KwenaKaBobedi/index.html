@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwena Ka Bobedi - School Inventory Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="window.location.href='index.html'">
+      <div class="nav-logo-mark">KB</div>
+      <div class="nav-logo-text">
+        Kwena Ka Bobedi
+        <span class="nav-logo-sub">School Inventory Management</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="HowItWorks.html" class="nav-link">How It Works</a>
+      <a href="Schools.html" class="nav-link">Schools</a>
+      <a href="Gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <button class="nav-cta" onclick="window.location.href='RequestQuote.html'">Request Quote</button>
+    </div>
+    <div class="nav-hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="HowItWorks.html" class="mobile-link">How It Works</a>
+    <a href="Schools.html" class="mobile-link">Schools</a>
+    <a href="Gallery.html" class="mobile-link">Gallery</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="RequestQuote.html" class="mobile-link" style="color: #C9A84C">→ Request a Quote</a>
+  </div>
+</nav>
+
+<!-- HOME PAGE -->
+  <main id="page-home" class="page-section">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="hero-tag">🇿🇦  South Africa's Education Inventory Specialists</div>
+          <h1 class="hero-title">
+            Full Control Over Your School's <em>Stock & Resources</em>
+          </h1>
+          <p class="hero-desc">
+            Kwena Ka Bobedi provides on-site and remote inventory management for school stationery, LTSM, and consumables — ensuring accountability, compliance, and zero resource gaps throughout the academic year.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="navTo('RequestQuote.html')">Request a Quote</button>
+            <button class="btn-outline" onclick="navTo('contact.html')">Book a Demo</button>
+          </div>
+        </div>
+        <div>
+            <!--Insert the Image on top to keep the site nice and not remove the the stats-->
+            <img src="Assets/Images/classroomTables&Chairs.jpg" alt="School Inventory Management" class="hero-image"style="width: 100%; height: auto; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          <div class="hero-stats">
+            <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Schools Served Across SA</div></div>
+            <div class="stat-item"><div class="stat-num">98%</div><div class="stat-label">Audit Accuracy Rate</div></div>
+            <div class="stat-item"><div class="stat-num">40%</div><div class="stat-label">Average Stock Loss Reduction</div></div>
+            <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">POPIA Compliant Processes</div></div>
+          </div>
+          <div class="hero-trust">
+            <div class="hero-trust-text">Trusted by Districts & SGBs</div>
+            <div class="hero-trust-desc">
+              Our digital audit trails meet DBE reporting standards and give principals real-time visibility into every item received, issued, and returned.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="badge-strip">
+      <div class="badge-strip-inner">
+        <div class="badge-item"><div class="badge-dot"></div>POPIA Compliant</div>
+        <div class="badge-item"><div class="badge-dot"></div>DBE-Aligned Reporting</div>
+        <div class="badge-item"><div class="badge-dot"></div>On-Site & Remote Support</div>
+        <div class="badge-item"><div class="badge-dot"></div>Certified Audit Trails</div>
+        <div class="badge-item"><div class="badge-dot"></div>SGB-Ready Documentation</div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="section-head">
+          <div class="section-label">Our Core Services</div>
+          <h2 class="section-title">Everything Schools Need to Stay Accountable</h2>
+          <p class="section-desc">From receiving and issuing to full annual audits, we manage the entire inventory lifecycle so educators can focus on teaching.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card"><div class="card-icon">📦</div><div class="card-title">Stock Receiving & Verification</div><div class="card-text">We receive, verify, and capture all incoming LTSM and stationery deliveries against official orders, ensuring zero discrepancies from the outset.</div></div>
+          <div class="card"><div class="card-icon">📋</div><div class="card-title">Issuing & Distribution Control</div><div class="card-text">Controlled issuing processes with signature trails ensure every item distributed to educators, classes, or departments is fully accounted for.</div></div>
+          <div class="card"><div class="card-icon">🔍</div><div class="card-title">Stock Counts & Reconciliation</div><div class="card-text">Scheduled cycle counts and year-end reconciliations give you a clear picture of balances, usage, and any unexplained variances.</div></div>
+          <div class="card"><div class="card-icon">📊</div><div class="card-title">Audit Trail Management</div><div class="card-text">Digital and paper-based audit trails are maintained in compliance with DBE and POPIA requirements, ready for district inspections.</div></div>
+          <div class="card"><div class="card-icon">🖥️</div><div class="card-title">Remote Support & Reporting</div><div class="card-text">Our remote service tier provides monthly stock reports, variance alerts, and principal dashboards without requiring on-site visits every week.</div></div>
+          <div class="card"><div class="card-icon">📅</div><div class="card-title">Annual Academic Cycle Planning</div><div class="card-text">We plan your full inventory calendar — from pre-year procurement to end-of-year surplus returns — aligned to your school's academic calendar.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-inner">
+        <div class="section-head">
+          <div class="section-label">What Schools Say</div>
+          <h2 class="section-title">Trusted by Principals & SGBs</h2>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <div class="testimonial-quote">"Before Kwena Ka Bobedi, we had no clear picture of our LTSM stock. After one term with them on-site, we had a full reconciliation, a clean audit trail, and district sign-off. It was transformative."</div>
+            <div class="testimonial-author">Principal N. Dlamini</div>
+            <div class="testimonial-role">Gauteng Primary School, 680 Learners</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-quote">"The reporting they provide is exactly what our SGB needs for quarterly meetings. Principals no longer dread procurement questions because the numbers are always there, accurate and ready."</div>
+            <div class="testimonial-author">Mrs. T. Mokoena</div>
+            <div class="testimonial-role">SGB Chairperson, Mpumalanga</div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial-quote">"We'd been losing thousands in stationery every year to poor tracking. Kwena Ka Bobedi implemented controls in week one that stopped the bleeding. Their team is professional and discreet."</div>
+            <div class="testimonial-author">Mr. S. Khumalo</div>
+            <div class="testimonial-role">District Procurement Officer, KZN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner">
+      <h2 class="cta-banner-title">Ready to Take Control of Your School's Inventory?</h2>
+      <p class="cta-banner-desc">Join hundreds of schools that have eliminated stock losses and passed their audits with confidence.</p>
+      <div class="cta-actions">
+        <button class="btn-primary" onclick="navTo('RequestQuote.html')">Request a Quote</button>
+        <button class="btn-outline" onclick="navTo('contact.html')">Page Coming Soon</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- SERVICES PAGE -->
+  <main id="page-services" class="page-section hidden">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-tag">Our Services</div>
+        <h1 class="page-hero-title">Comprehensive School Inventory Management</h1>
+        <p class="page-hero-desc">Every service we offer is designed around the unique operational pressures of South African public and independent schools.</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="section-inner">
+        <div class="service-row">
+          <div>
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">📦</div>
+            <div class="section-label">Service 01</div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: #1B4332; margin-bottom: 0.75rem; line-height: 1.2;">LTSM Stock Management</h2>
+            <p style="font-size: 14px; color: #6B7B6C; line-height: 1.8; font-weight: 300; margin-bottom: 1.5rem;">Learner Teacher Support Material (LTSM) is one of a school's largest budget items. We manage the full lifecycle — from order verification and receiving to issuing to learners and year-end returns.</p>
+          </div>
+          <div style="background: #F8F5EF; border-radius: 10px; padding: 1.75rem;">
+            <div style="font-size: 12px; font-weight: 600; color: #1B4332; margin-bottom: 1rem; letter-spacing: 0.05em; text-transform: uppercase;">What's Included</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Delivery verification against official purchase orders</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Condition grading and tagging of all books and materials</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Learner-level issuing records with parent acknowledgement</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>End-of-year collection and condition assessment for reuse analysis</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-row">
+          <div>
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">🖊️</div>
+            <div class="section-label">Service 02</div>
+            <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 600; color: #1B4332; margin-bottom: 0.75rem; line-height: 1.2;">Stationery & Consumables Control</h2>
+            <p style="font-size: 14px; color: #6B7B6C; line-height: 1.8; font-weight: 300; margin-bottom: 1.5rem;">Day-to-day stationery is where leakage happens silently. Our controls stop shrinkage at the source through tightly managed issuing processes.</p>
+          </div>
+          <div style="background: #F8F5EF; border-radius: 10px; padding: 1.75rem;">
+            <div style="font-size: 12px; font-weight: 600; color: #1B4332; margin-bottom: 1rem; letter-spacing: 0.05em; text-transform: uppercase;">What's Included</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px;">
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Departmental and classroom allowance tracking</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Reorder point alerts before stock runs out</li>
+              <li style="font-size: 13.5px; color: #4a5a4b; display: flex; gap: 10px; line-height: 1.6;"><span style="color: #1B4332; font-weight: 700; flex-shrink: 0;">✓</span>Bulk storage organization and labeling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-name">Kwena Ka Bobedi</div>
+          <div class="footer-brand-desc">Professional school inventory management across South Africa. Accountability, transparency, and compliance — every academic year.</div>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li onclick="navTo('services')">LTSM Management</li>
+            <li onclick="navTo('services')">Stationery Control</li>
+            <li onclick="navTo('services')">Stock Audits</li>
+            <li onclick="navTo('services')">Remote Reporting</li>
+            <li onclick="navTo('services')">Annual Reconciliation</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li onclick="navTo('about.html')">About Us</li>
+            <li onclick="navTo('howItworks.html')">How It Works</li>
+            <li onclick="navTo('Schools.html')">Schools</li>
+            <li onclick="navTo('contact.html')">Contact</li>
+            <li onclick="navTo('RequestQuote.html')">Get a Quote</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" style="gap: 0.75rem;">
+            <li style="cursor: default;">Kempton Park, Gauteng</li>
+            <li style="cursor: default;">kwenakabobedi@co.za</li>
+            <li style="cursor: default;">+27 (0)73 484 2927</li>
+            <li style="cursor: default;">Mon–Fri, 08:00–16:30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Kwena Ka Bobedi (Pty) Ltd. All rights reserved. Developed by Team Prokreative.</div>
+        <div class="footer-popia" onclick="navTo('Popia.html')">POPIA Privacy Policy →</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="JavaScript/script.js"></script>
+</body>
+</html>
