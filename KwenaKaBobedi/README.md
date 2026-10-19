@@ -14,6 +14,31 @@ Responsive Multi-Page Layout: Designed for seamless viewing across mobile device
 
 Optimized Performance: Lightweight structure prioritizing low bandwidth usage and rapid accessibility.
 
+***System Architecture & Tech Stack***
+
+Frontend: Standard HTML5, CSS3, JavaScript.
+
+Version Control: Git & GitHub (SimphiweDladla/KwenaKaBobedi-Prokreatives).
+
+Continuous Integration (CI): GitHub Actions (.github/workflows/lighthouse.yml) testing site performance, SEO, accessibility, and best practices.
+
+Continuous Deployment (CD): Netlify hosting platform connected via webhook integration to
+
+Automated CI/CD Pipeline OperationsContinuous Integration (CI)Upon every git push origin main, GitHub Actions automatically initializes a virtual runner.It executes .github/workflows/lighthouse.yml to audit performance, accessibility, best practices, and SEO.To View Logs: Navigate to GitHub repository $\rightarrow$ Actions tab $\rightarrow$ select the latest run.
+
+Continuous Deployment (CD)Netlify detects new commits on the main branch automatically.It executes a static site build and deploys changes to kwenakabobedi.netlify.app.To View Logs: Log into the Netlify Dashboard,select project , Deploys.
+
+
+
+
+
+
+
+
+
+
+
+
 **1 September 26**
 Downloaded the Images on Istock&Pixabay site.
 
