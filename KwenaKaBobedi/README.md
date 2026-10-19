@@ -1,6 +1,11 @@
 ***Kwena Ka Bobedi(Pty)Ltd - Official Website***
 A professional, responsive multi-page corporate website developed for Kwena Ka Bobedi (Pty) Ltd.
 
+<img width="936" height="467" alt="Git1" src="https://github.com/user-attachments/assets/5b95e1b0-1d3c-4f2a-8523-e4f504055ef0" />
+Figure 1
+
+
+
 ***Projectg Overview***
 This repository houses the core web design and source code for Kwena Ka Bobedi (Pty) Ltd. Built with modern, clean front-end web standards, the site focuses on mobile optimization, low data consumption, rapid load times, and intuitive user navigation.
 
